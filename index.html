@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-3</title>
+  <!-- tailwind & daisyUI CDN link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- font-family -->
+  <style>
+    .font-manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+    .description{
+      color: #13131899;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  </style>
+  <!-- custom tailwind css property -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bg-primary': '#FF4240',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-manrope">
+  <header>
+    <!-- navbar style star -->
+    <nav class="container mx-auto mt-12">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a class="text-[#ff4240] font-bold ">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <h2 class="text-[#131318] font-extrabold text-2xl lg:text-4xl">Hockey<span class="text-bg-primary">'</span>s
+          </h2>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-[#ff4240] font-bold ">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end space-x-6">
+          <img src="Images/Frame.png" alt="" class="hidden lg:flex">
+          <a class="btn bg-bg-primary text-white text-xl font-bold">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar style end -->
+
+    <!-- slider section start -->
+    <section class="my-10">
+      <div class="container mx-auto">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-[95%] mx-auto lg:w-full" />
+            <div
+              class="absolute flex justify-between transform translate-y-2  lg:translate-y-36 left-40 lg:left-16 top-2/3 space-x-2">
+              <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="Images/download.jpg" class="w-full rounded-3xl" />
+            <div
+              class="absolute flex justify-between transform translate-y-2  lg:translate-y-36 left-40 lg:left-16 top-2/3 space-x-2">
+              <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
+              <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+            </div>
+          </div>
+
+        </div>
+        <div
+          class="w-[90%] lg:w-[666px] h-[156px] bg-slate-900 p-4 lg:p-8 rounded-xl absolute left-4 lg:left-2/4  translate-y-3 lg:-translate-y-48 ">
+          <h2 class="text-white text-lg lg:text-2xl font-extrabold ">Meet all the heroes from the field</h2>
+          <p class="text-white">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+            Purus urna in sit nullam proin.</p>
+        </div>
+      </div>
+    </section>
+    <!-- slider section end -->
+  </header>
+  <main>
+    <!-- hockeys club section style star -->
+    <section class="my-6 lg:my-32">
+      <h1 class="text-[#131318] text-center text-4xl font-extrabold">Professional Hockeys Club</h1>
+      <p class="text-[#13131899] text-center max-w-screen-sm mx-auto py-6 pb-20">Dit amet consectetur. Condimentum dignissim
+        adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+      <div class="container mx-auto">
+        <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <!-- 1st card -->
+          
+            <div class="card  bg-base-100  p-4">
+              <div class="radial-progress mx-auto text-amber-600" style="--value:87; --size:10rem; --thickness: 1rem;" role="progressbar">87%</div>
+              <div class="card-body items-center text-center">
+                <h2 class="text-[#131318] text-xl font-semibold">Prayer Facility</h2>
+                <p class="description">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                
+              </div>
+            </div>
+          <!-- 2nd card -->
+          
+            <div class="card bg-base-100  p-4">
+              <div class="radial-progress mx-auto text-amber-600" style="--value:87; --size:10rem; --thickness: 1rem;" role="progressbar">87%</div>
+              <div class="card-body items-center text-center">
+                <h2 class="text-[#131318] text-xl font-semibold">Prayer Facility</h2>
+                <p class="description">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                
+              </div>
+            </div>
+          <!-- 3rd card -->
+          
+            <div class="card bg-base-100  p-4">
+              <div class="radial-progress mx-auto text-amber-600" style="--value:87; --size:10rem; --thickness: 1rem;" role="progressbar">87%</div>
+              <div class="card-body items-center text-center">
+                <h2 class="text-[#131318] text-xl font-semibold">Prayer Facility</h2>
+                <p class="description">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                
+              </div>
+            </div>
+          <!-- 4rd card -->
+          
+            <div class="card bg-base-100  p-4">
+              <div class="radial-progress mx-auto text-amber-600" style="--value:87; --size:10rem; --thickness: 1rem;" role="progressbar">87%</div>
+              <div class="card-body items-center text-center">
+                <h2 class="text-[#131318] text-xl font-semibold">Prayer Facility</h2>
+                <p class="description">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                
+              </div>
+            </div>
+          
+
+
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
